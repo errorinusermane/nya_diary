@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nya_diary/pages/lock_page.dart';
-import 'package:nya_diary/theme/light_theme.dart';
+import 'theme/light_theme.dart';
 
 void main() {
   runApp(const MyApp());

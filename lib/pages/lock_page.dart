@@ -36,16 +36,15 @@ class _LockPageState extends State<LockPage> {
   }
 
   void _onPressed(String value) async {
-    if (_input.length < maxLength) {
-      setState(() {
-        _input += value;
-      });
+    if (_input.length >= maxLength) return;
 
-      if (_input.length + 1 == maxLength) {
-        // 다음 입력까지 기다렸다가 자동 제출
-        await Future.delayed(const Duration(milliseconds: 50));
-        _submit(); // ✅ 자동 제출
-      }
+    setState(() {
+      _input += value;
+    });
+
+    if (_input.length == maxLength) {
+      await Future.delayed(const Duration(milliseconds: 100));
+      _submit();
     }
   }
 
