@@ -1,0 +1,54 @@
+# Flutter/Dart 관련
+.dart_tool/
+.packages
+.pub-cache/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.flutter-versions
+generated_plugin_registrant.dart
+
+# Android 관련
+android/.gradle/
+android/captures/
+android/.idea/
+*.iml
+*.apk
+*.aar
+*.jks
+
+# iOS 관련
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/.symlinks/
+ios/Pods/
+ios/Runner.xcworkspace/
+ios/DerivedData/
+ios/.dart_tool/
+
+# macOS 관련
+macos/Flutter/ephemeral/
+macos/Pods/
+macos/Runner.xcworkspace/
+
+# Xcode 관련
+*.xcworkspace
+*.xcuserstate
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcworkspace/contents.xcworkspacedata
+
+# VS Code 설정
+.vscode/
+
+# IntelliJ 관련
+.idea/
+*.iml
+
+# 기타
+*.log
+*.lock
+*.tmp
+*.swp
+.DS_Store
